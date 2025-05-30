@@ -3,7 +3,7 @@ def call() {
 }
 
 def cdown(repo) {
-    git "https://github.com/sai-kadinti/${repo}"
+    git "https://github.com/sai-kadinti/${repo}.git"
 }
 
 def cbuild(mvn_stage) {
