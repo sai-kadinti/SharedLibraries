@@ -16,7 +16,7 @@ def cbuild(mvn_stage) {
 }
 
 def cdeploy(job_name, ip, path) {
-    sh "scp /home/ubuntu/jenkins/workspace/${job_name}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/webapps/${path}.war"
+    sh "scp /var/lib/jenkins/workspace/${job_name}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/webapps/${path}.war"
 }
 
 def ctest(jobname) {
